@@ -1,0 +1,104 @@
+-
+  const headerNavList = [
+
+        {
+            title: 'О нас',
+            url:  'about.html'
+        },
+
+        {
+            title: 'Контакты',
+            url:  'contacts.html'
+        },
+
+        {
+            title: 'Доставка',
+            url:  'delivery.html'
+        },
+
+        {
+            title: 'Новинки',
+            url:  'catalog.html'
+        },
+
+        {
+            title: 'Товары для малышей',
+            url:  'catalog.html'
+        },
+
+        {
+            title: 'Мальчики',
+            url:  'catalog.html'
+        },
+
+        {
+            title: 'Девочки',
+            url:  'catalog.html'
+        },
+
+        {
+            title: 'Обувь',
+            url:  'catalog.html'
+        },
+
+        {
+            title: 'Игрушки',
+            url:  'catalog.html'
+        },
+    ]
+
+-
+  const actionList = [
+      {
+          url: '#',
+          iconName: '#icon-search',
+          iconWidth: '43px',
+          iconHeight: '43px',
+      },
+
+      {
+          url: '#',
+          iconName: '#icon-user',
+          iconWidth: '46px',
+          iconHeight: '46px',
+      },
+
+      {
+          url: '#',
+          iconName: '#icon-heart',
+          iconWidth: '44px',
+          iconHeight: '38px',
+      },
+
+      {
+          url: '#',
+          iconName: '#icon-cart',
+          iconWidth: '40px',
+          iconHeight: '40px',
+      }
+
+  ]
+
+
+header.header
+  include ./header-components/crawl-line
+  
+  .header__top
+    .cmn__wrapper
+      p header-top
+  .header__main
+    .cmn__wrapper.header__main-wrapper
+      
+      ul.header__nav
+        each item in headerNavList
+          li.header__nav-item
+            a(href=item.url)= item.title
+      
+      ul.header__action
+        each button in actionList
+          li.header__action-item
+            a(href=button.url)
+              svg(width=button.iconWidth height=button.iconHeight)
+                use(xlink:href=button.iconName)
+        
+  include ./nav

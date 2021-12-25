@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://nk-store-layout/./source/scripts/index.js"],"names":[],"mappings":";;;;;;AAAY;;AAEZ,6B","file":"./js/bundle.js","sourcesContent":["'use strict'\r\n\r\nconsole.log('script is ok !')"],"sourceRoot":""}

@@ -1,0 +1,19 @@
+@import "fonts";
+@import "normalize";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "cmn";
+
+// header
+
+@import "./common/header";
+@import "./common/header-components/crawl-line";
+
+// nav
+
+@import "./common/nav";
+
+//footer
+
+@import "./common/footer";

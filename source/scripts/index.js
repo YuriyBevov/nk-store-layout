@@ -1,3 +1,3 @@
 'use strict'
 
-console.log('script is ok !')
+import swiper from './modules/swiper.js';

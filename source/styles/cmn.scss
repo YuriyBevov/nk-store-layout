@@ -2,4 +2,19 @@
     &__wrapper {
         @include container();
     }
+
+    &__button {
+        font-family: $f4_reg; 
+        font-size: 3.6rem;
+        line-height: 4.5rem;
+        text-transform: capitalize;
+
+        width: fit-content;
+        padding: 0.5rem 3rem;
+        
+        border-radius: 5rem;
+        box-shadow: 5px 5px 10px rgba(143, 31, 232, 0.2);
+        color: $purple-1;
+        background: rgba(255, 225, 79, 0.84);
+    }
 }

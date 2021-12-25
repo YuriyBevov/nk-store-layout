@@ -5,6 +5,9 @@
 @import "global";
 @import "cmn";
 
+// plugins
+
+@import "./plugins/swiper";
 // header
 
 @import "./common/header";
@@ -13,6 +16,10 @@
 // nav
 
 @import "./common/nav";
+
+// blocks
+
+@import "./blocks/index-page/intro";
 
 //footer
 

@@ -52,29 +52,29 @@
       {
           url: '#',
           iconName: '#icon-search',
-          iconWidth: '43px',
-          iconHeight: '43px',
+          iconWidth: '35px',
+          iconHeight: '35px',
       },
 
       {
           url: '#',
           iconName: '#icon-user',
-          iconWidth: '46px',
-          iconHeight: '46px',
+          iconWidth: '35px',
+          iconHeight: '35px',
       },
 
       {
           url: '#',
           iconName: '#icon-heart',
-          iconWidth: '44px',
-          iconHeight: '38px',
+          iconWidth: '35px',
+          iconHeight: '35px',
       },
 
       {
           url: '#',
           iconName: '#icon-cart',
-          iconWidth: '40px',
-          iconHeight: '40px',
+          iconWidth: '35px',
+          iconHeight: '35px',
       }
 
   ]
@@ -84,11 +84,28 @@ header.header
   include ./header-components/crawl-line
   
   .header__top
-    .cmn__wrapper
-      p header-top
+    .cmn__wrapper.header__top-wrapper
+      .header__contacts
+        .header__contacts-city
+          svg(width="50px" height="50px")
+            use(xlink:href="#icon-map")
+          .header__contacts-city-container  
+            span Ваш город:
+            a(href="#") Санкт- Петербург
+
+        .header__contacts-phone
+          svg(width="25px" height="25px")
+            use(xlink:href="#icon-phone")
+          a(href="telto:+79999999999") +7 999 999 99 99 
+      .header__info
+        svg(width="40px" height="40px")
+          use(xlink:href="#icon-info")
+        .header__info-container
+          a(href="#") Условия оплаты и возврата
+          a(href="#") Политика конфиденциальности
+
   .header__main
     .cmn__wrapper.header__main-wrapper
-      
       ul.header__nav
         each item in headerNavList
           li.header__nav-item

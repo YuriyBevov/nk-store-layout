@@ -24,3 +24,17 @@ new Swiper(reviewSwiper, {
         dynamicBullets: true,
     },
 }) : null
+
+let popularSlider = document.querySelector('.popular-swiper');
+
+popularSlider ?
+new Swiper(popularSlider, {
+    slidesPerView: '4',
+}) : null
+
+let historySlider = document.querySelector('.history-swiper');
+
+historySlider ?
+new Swiper(historySlider, {
+    slidesPerView: '4',
+}) : null

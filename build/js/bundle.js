@@ -7256,6 +7256,20 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__.default(reviewSwiper, {
     },
 }) : null
 
+let popularSlider = document.querySelector('.popular-swiper');
+
+popularSlider ?
+new swiper__WEBPACK_IMPORTED_MODULE_0__.default(popularSlider, {
+    slidesPerView: '4',
+}) : null
+
+let historySlider = document.querySelector('.history-swiper');
+
+historySlider ?
+new swiper__WEBPACK_IMPORTED_MODULE_0__.default(historySlider, {
+    slidesPerView: '4',
+}) : null
+
 /***/ })
 
 /******/ 	});

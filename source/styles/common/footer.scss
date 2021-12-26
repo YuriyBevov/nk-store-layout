@@ -1,8 +1,29 @@
 .footer {
+    position: relative;
+    padding-top: 25rem;
+    background: linear-gradient(180deg, rgba(214, 193, 85, 0) 0%, rgba(103, 90, 23, 0.43) 100%);
+
+    &::before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../assets/img/wave.svg);
+        background-size: cover;
+        z-index: 0;
+        background-position: bottom;
+    }
 
     &__top {
-        display: flex;
-        align-items: center;
+        position: relative;
+        padding: 1rem 0;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+        }
 
         img {
             margin-right: auto;
@@ -21,6 +42,7 @@
     
             li {
                 min-height: 4rem;
+
                 a {
                     display: flex;
                     align-items: center;
@@ -38,11 +60,19 @@
     }
 
     &__bottom {
-        display: flex;
-        align-items: center;
+        position: relative;
+        background: linear-gradient(180deg, rgba(214, 193, 85, 0) 0%, rgba(103, 90, 23, 0.43) 100%);
+        border-top: 1px solid rgba(165, 142, 24, 0.3);
+
+        &-wrapper {
+            display: flex;
+            align-items: flex-start;
+            padding: 2rem 0;
+        }
         &-nav {
-            max-width: 93rem;
+            max-width: 90rem;
             margin-right: auto;
+
             ul {
                 display: flex;
                 flex-wrap: wrap;
@@ -50,17 +80,17 @@
 
             li {
                 min-height: 4rem;
-
+                max-width: 30rem;
+                flex-grow: 1;
                 a {
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    align-items: flex-start;
                     width: 100%;
                     height: 100%;
-                    padding: 1.5rem;
+                    padding: 0.5rem;
                     font-family: $f1_med;
-                    font-size: 1.6rem;
-                    line-height: 2rem;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
 
                     color: $black;
                 }

@@ -7,3 +7,8 @@
     margin: 0 auto;
 }
 
+@mixin block_mb() {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+

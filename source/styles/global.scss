@@ -80,10 +80,10 @@ input, textarea {
   border-radius: 0;
 }
 
-/*svg {
-  transition: fill $transition_rules;
-  fill: #97A2AC;
-}*/
+svg {
+  transition: fill $main-transition;
+  fill: rgba(23, 123, 239, 0.86);
+}
 
 .visually-hidden {
   position: absolute;

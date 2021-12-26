@@ -1,13 +1,26 @@
 import Swiper from 'swiper';
 
-let swiper = document.querySelector('.intro-swiper');
+let introSwiper = document.querySelector('.intro-swiper');
 
-swiper ?
-new Swiper(swiper, {
+introSwiper ?
+new Swiper(introSwiper, {
     slidesPerView: 1,
 
     pagination: {
         el: ".intro-swiper-pagination",
+        dynamicBullets: true,
+    },
+}) : null
+
+
+let reviewSwiper = document.querySelector('.reviews-swiper');
+
+reviewSwiper ?
+new Swiper(reviewSwiper, {
+    slidesPerView: '4',
+
+    pagination: {
+        el: ".review-swiper-pagination",
         dynamicBullets: true,
     },
 }) : null

@@ -1,0 +1,42 @@
+.cats {
+    @include block_mb();
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 50rem;
+        grid-gap: 2.5rem;
+
+        li {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 10px 10px 10px 5px rgba(143, 31, 232, 0.15);
+
+            a {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 5rem;
+            }
+        }
+
+        li:first-of-type {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            a {
+                position: relative;
+                span {
+                    position: absolute;
+                    top: 15rem;
+                    left: -5rem;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+    }
+}

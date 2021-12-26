@@ -20,6 +20,19 @@
 // blocks
 
 @import "./blocks/index-page/intro";
+@import "./blocks/index-page/cats";
+@import "./blocks/index-page/about";
+@import "./blocks/index-page/popular";
+@import "./blocks/index-page/register";
+@import "./blocks/index-page/history";
+@import "./blocks/index-page/reviews";
+
+//components
+
+/*cards*/
+
+@import "./components/cards/review-card";
+@import "./components/cards/item-card";
 
 //footer
 

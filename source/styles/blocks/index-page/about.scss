@@ -1,0 +1,66 @@
+.about {
+    @include block_mb();
+    
+    &__container {
+        display: flex;
+
+        img {
+            width: 50%;
+            height: 100%;
+            max-width: 78.3rem;
+            object-fit: cover;
+            flex-grow: 1;
+            margin-right: auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-grow: 2;
+        max-width: 78.3rem;
+        padding: 5rem 2rem;
+
+        h3 {
+            font-family: $f1_semi;
+            font-size: 3rem;
+            line-height: 3.7rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-left: 5rem;
+
+            color: $black;
+        }
+
+        ul {
+            margin-bottom: 3rem;
+            li {
+                position: relative;
+                font-family: $f2_reg;
+                font-size: 2.4rem;
+                line-height: 2.8rem;
+                padding-left: 5rem;
+                margin-bottom: 2rem;
+
+                color: $black;
+
+                &::before {
+                    position: absolute;
+
+                    top: 12px;
+                    left: 35px;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $black;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        a {
+            margin: 0 auto;
+        }
+    }
+}

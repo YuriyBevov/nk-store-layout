@@ -29,8 +29,9 @@ section.intro
           .swiper-slide
             .swiper-slide-container(style='background-image: url(' + slide.img + ')')
               .cmn__wrapper.intro-swiper__wrapper
-                h2!=slide.title 
-                a(href=slide.url).cmn__button= slide.link 
+                .intro-swiper__container
+                  h2!=slide.title 
+                  a(href=slide.url).cmn__button= slide.link 
     
-      .intro-swiper-pagination
+    .intro-swiper-pagination
 

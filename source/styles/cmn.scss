@@ -3,6 +3,17 @@
         @include container();
     }
 
+    &__block-title {
+        font-family: $f1_med;
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+        color: $black;
+    }
+
     &__button {
         font-family: $f4_reg; 
         font-size: 3.6rem;

@@ -7231,14 +7231,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/esm/components/core/core-class.js");
 
 
-let swiper = document.querySelector('.intro-swiper');
+let introSwiper = document.querySelector('.intro-swiper');
 
-swiper ?
-new swiper__WEBPACK_IMPORTED_MODULE_0__.default(swiper, {
+introSwiper ?
+new swiper__WEBPACK_IMPORTED_MODULE_0__.default(introSwiper, {
     slidesPerView: 1,
 
     pagination: {
         el: ".intro-swiper-pagination",
+        dynamicBullets: true,
+    },
+}) : null
+
+
+let reviewSwiper = document.querySelector('.reviews-swiper');
+
+reviewSwiper ?
+new swiper__WEBPACK_IMPORTED_MODULE_0__.default(reviewSwiper, {
+    slidesPerView: '4',
+
+    pagination: {
+        el: ".review-swiper-pagination",
         dynamicBullets: true,
     },
 }) : null

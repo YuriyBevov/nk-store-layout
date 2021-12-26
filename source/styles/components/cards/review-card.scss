@@ -1,0 +1,38 @@
+.review-card {
+    width: 35rem;
+    padding: 2.4rem;
+    background: rgba(255, 233, 118, 0.82);
+
+    box-shadow: 10px 10px 10px 5px rgba(143, 31, 232, 0.15);
+    border-radius: 30px;
+
+    &__text {
+        margin-bottom: 3rem;
+        span {
+            display: block;
+            font-family: $f2_reg;
+            font-size: 2rem;
+            line-height: 2.3rem;
+            margin-bottom: 1.5rem;
+
+            color: $black;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 1rem;
+        }
+
+        p {
+            font-family: $f2_bold;
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+
+            color: $black;
+        }
+    }
+}

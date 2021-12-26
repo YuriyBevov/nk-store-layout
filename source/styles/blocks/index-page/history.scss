@@ -1,3 +1,11 @@
 .history {
     @include block_mb();
+
+    &-swiper {
+        padding-bottom: 3rem;
+    }
+
+    .swiper-scrollbar {
+        margin-top: 3rem;
+    }
 }

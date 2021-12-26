@@ -10,5 +10,10 @@ section.reviews
         each review in reviews
           .swiper-slide
             include ../../components/cards/review-card
-    
-    .reviews-swiper-pagination
+
+      .swiper-button-next.reviews-button-next
+        svg(width="20" height="20")
+          use(xlink:href="#icon-slider-arr")
+      .swiper-button-prev.reviews-button-prev
+        svg(width="20" height="20")
+          use(xlink:href="#icon-slider-arr")

@@ -1,15 +1,18 @@
-import Swiper from 'swiper';
+import SwiperCore, { Autoplay, Scrollbar, Navigation, Pagination, Thumbs } from 'swiper/core';
+SwiperCore.use([Autoplay, Scrollbar, Navigation, Pagination, Thumbs]);
+
+import Swiper from 'swiper'
 
 let introSwiper = document.querySelector('.intro-swiper');
 
 introSwiper ?
 new Swiper(introSwiper, {
     slidesPerView: 1,
-
+    modules: [Pagination],
     pagination: {
-        el: ".intro-swiper-pagination",
+        el: ".swiper-pagination",
         dynamicBullets: true,
-    },
+      },
 }) : null
 
 
@@ -17,12 +20,13 @@ let reviewSwiper = document.querySelector('.reviews-swiper');
 
 reviewSwiper ?
 new Swiper(reviewSwiper, {
-    slidesPerView: '4',
-
-    pagination: {
-        el: ".review-swiper-pagination",
-        dynamicBullets: true,
-    },
+    modules: [Navigation],
+    slidesPerView: '4', 
+    
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
 }) : null
 
 let popularSlider = document.querySelector('.popular-swiper');
@@ -30,6 +34,11 @@ let popularSlider = document.querySelector('.popular-swiper');
 popularSlider ?
 new Swiper(popularSlider, {
     slidesPerView: '4',
+    modules: [Scrollbar],
+
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
 }) : null
 
 let historySlider = document.querySelector('.history-swiper');
@@ -37,4 +46,9 @@ let historySlider = document.querySelector('.history-swiper');
 historySlider ?
 new Swiper(historySlider, {
     slidesPerView: '4',
+    modules: [Scrollbar],
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
 }) : null

@@ -35,11 +35,11 @@ let popularSlider = document.querySelector('.popular-swiper');
 popularSlider ?
 new Swiper(popularSlider, {
     slidesPerView: '4',
-    modules: [Scrollbar],
+    modules: [Pagination],
 
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
     },
 }) : null
 
@@ -48,9 +48,10 @@ let historySlider = document.querySelector('.history-swiper');
 historySlider ?
 new Swiper(historySlider, {
     slidesPerView: '4',
-    modules: [Scrollbar],
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
+    modules: [Pagination],
+
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
     },
 }) : null

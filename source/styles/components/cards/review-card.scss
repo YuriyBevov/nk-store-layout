@@ -1,4 +1,6 @@
 .review-card {
+    display: flex;
+    flex-direction: column;
     width: 35rem;
     padding: 2.4rem;
     background: rgba(255, 233, 118, 0.82);
@@ -7,7 +9,6 @@
     border-radius: 30px;
 
     &__text {
-        margin-bottom: 3rem;
         span {
             display: block;
             font-family: $f2_reg;
@@ -17,6 +18,13 @@
 
             color: $black;
         }
+    }
+
+    &__more {
+        display: block;
+        margin-left: auto;
+        color: $purple-1;
+        margin-bottom: 1.5rem;
     }
 
     &__footer {

@@ -118,3 +118,19 @@ svg {
     opacity: 0.5;
     cursor: initial !important;
 }
+
+.swiper-pagination {
+  width: 100%;
+  height: 5px;
+
+  &-progressbar-fill {
+    background: $purple-1 !important;
+  }
+
+  &-bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: blue;
+  }
+}

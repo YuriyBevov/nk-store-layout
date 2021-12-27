@@ -4,6 +4,7 @@
     &-swiper {
         position: relative;
         padding-bottom: 7rem;
+        overflow: visible !important;
     }
 
     &-button-next,
@@ -28,7 +29,7 @@
     }
 
     &-button-prev {
-        right: calc(26% + 100px);
+        left: calc(70% - 100px);
 
         svg {
             transform: rotate(180deg);

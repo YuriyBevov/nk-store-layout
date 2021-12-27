@@ -15,6 +15,22 @@
             &-wrapper {
                 display: flex;
             }
+
+            &-pagination {
+                position: absolute;
+                width: 80px;
+                height: 20px;
+                top: 50%;
+                left: calc(100% - 100px) !important;
+                transform: rotate(90deg) !important;
+
+                &-bullet {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-color: $purple-1;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+                }
+            }
         }
         
         .swiper-slide {

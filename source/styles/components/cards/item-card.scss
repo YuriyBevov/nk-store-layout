@@ -11,7 +11,33 @@
         left: 1.5rem;
     }
 
+    &__favourite-btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    &__zoom {
+        position: absolute;
+        bottom: -5rem;
+        right: -5rem;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+
+        background-color: rgba(255, 225, 79, 0.84);
+
+        svg {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -100%);
+        }
+    }
+
     &__header {
+        position: relative;
+        overflow: hidden;
         height: 45rem;
         img {
             object-fit: cover;

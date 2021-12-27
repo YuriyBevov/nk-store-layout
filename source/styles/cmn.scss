@@ -71,4 +71,10 @@
 
         color: $purple-1;
     }
+
+    &__favourite-btn {
+        svg {
+            fill: $purple-1;
+        }
+    }
 }

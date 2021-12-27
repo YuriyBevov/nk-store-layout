@@ -11,7 +11,11 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 4rem;
-        color: $black;
+        // color: $black;
+        background: -webkit-linear-gradient(0deg, #3948B1 17.32%, #50976A 46.34%, #FF784B 80.33%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
     }
 
     &__button {

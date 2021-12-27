@@ -21,7 +21,8 @@ let reviewSwiper = document.querySelector('.reviews-swiper');
 reviewSwiper ?
 new Swiper(reviewSwiper, {
     modules: [Navigation],
-    slidesPerView: '4', 
+    slidesPerView: '4',
+    // spaceBetween: 20,
     
     navigation: {
         nextEl: ".swiper-button-next",
@@ -38,6 +39,7 @@ new Swiper(popularSlider, {
 
     scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,
     },
 }) : null
 

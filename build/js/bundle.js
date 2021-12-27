@@ -8722,7 +8722,8 @@ let reviewSwiper = document.querySelector('.reviews-swiper');
 reviewSwiper ?
 new swiper_core__WEBPACK_IMPORTED_MODULE_0__.default(reviewSwiper, {
     modules: [swiper_core__WEBPACK_IMPORTED_MODULE_3__.default],
-    slidesPerView: '4', 
+    slidesPerView: '4',
+    // spaceBetween: 20,
     
     navigation: {
         nextEl: ".swiper-button-next",
@@ -8739,6 +8740,7 @@ new swiper_core__WEBPACK_IMPORTED_MODULE_0__.default(popularSlider, {
 
     scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,
     },
 }) : null
 

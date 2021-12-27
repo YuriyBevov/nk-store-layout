@@ -31,62 +31,49 @@
           <p class="cmn__text">Работаем в штатном режиме!</p>
         </div>
       </div>
-      <div class="header__top">
-        <div class="cmn__wrapper header__top-wrapper">
-          <div class="header__contacts">
-            <div class="header__contacts-city">
-              <svg width="40px" height="40px">
-                <use xlink:href="#icon-map"></use>
-              </svg>
-              <div class="header__contacts-city-container"> <span>Ваш город:</span><a href="#">Санкт- Петербург</a></div>
-            </div>
-            <div class="header__contacts-phone">
-              <svg width="35px" height="35px">
-                <use xlink:href="#icon-phone"></use>
-              </svg><a href="tel:+79999999999">+7 999 999 99 99 </a>
-            </div>
-          </div>
-          <div class="header__info">
-            <svg width="40px" height="40px">
-              <use xlink:href="#icon-info"></use>
-            </svg>
-            <div class="header__info-container"><a href="#">Условия оплаты и возврата</a><a href="#">Политика конфиденциальности</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="header__main">
-        <div class="cmn__wrapper header__main-wrapper">
-          <ul class="header__nav">
-            <li class="header__nav-item"><a href="about.html">О нас</a></li>
-            <li class="header__nav-item"><a href="contacts.html">Контакты</a></li>
-            <li class="header__nav-item"><a href="delivery.html">Доставка</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Новинки</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Товары для малышей</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Мальчики</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Девочки</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Обувь</a></li>
-            <li class="header__nav-item"><a href="catalog.html">Игрушки</a></li>
-          </ul>
-          <ul class="header__action">
-            <li class="header__action-item"><a href="#">
-                <svg width="30px" height="30px">
-                  <use xlink:href="#icon-search"></use>
-                </svg></a></li>
-            <li class="header__action-item"><a href="#">
-                <svg width="30px" height="30px">
-                  <use xlink:href="#icon-user"></use>
-                </svg></a></li>
-            <li class="header__action-item"><a href="#">
-                <svg width="30px" height="30px">
-                  <use xlink:href="#icon-heart"></use>
-                </svg></a></li>
-            <li class="header__action-item"><a href="#">
-                <svg width="30px" height="30px">
-                  <use xlink:href="#icon-cart"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-      </div>
+      <!--.header__top
+      .cmn__wrapper.header__top-wrapper
+        .header__contacts
+          .header__contacts-city
+            svg(width="25px" height="25px")
+              use(xlink:href="#icon-map")
+            .header__contacts-city-container  
+              span Ваш город:
+              a(href="#") Санкт- Петербург
+      
+          .header__contacts-phone
+            svg(width="25px" height="25px")
+              use(xlink:href="#icon-phone")
+            a(href="tel:+79999999999") +7 999 999 99 99 
+        .header__info
+          ul.header__nav
+            each item in headerNavList
+              li.header__nav-item
+                a(href=item.url)= item.title
+        
+          ul.header__action
+            each button in actionList
+              li.header__action-item
+                a(href=button.url)
+                  svg(width=button.iconWidth height=button.iconHeight)
+                    use(xlink:href=button.iconName)
+      
+      -->
+      <!--.header__main
+      .cmn__wrapper.header__main-wrapper
+        ul.header__nav
+          each item in headerNavList
+            li.header__nav-item
+              a(href=item.url)= item.title
+        
+        ul.header__action
+          each button in actionList
+            li.header__action-item
+              a(href=button.url)
+                svg(width=button.iconWidth height=button.iconHeight)
+                  use(xlink:href=button.iconName)
+          
+      -->
       <nav class="nav">
         <div class="cmn__wrapper nav__wrapper">
           <div class="nav__list">

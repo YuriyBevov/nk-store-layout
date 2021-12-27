@@ -17,6 +17,16 @@
         },
 
         {
+            title: 'Условия оплаты и возврата',
+            url: '#'
+        },
+
+        {
+            title: 'Политика конфиденциальности',
+            url: '#'
+        },
+
+        {
             title: 'Новинки',
             url:  'catalog.html'
         },
@@ -82,28 +92,34 @@
 header.header
   include ./header-components/crawl-line
   
-  .header__top
+  //.header__top
     .cmn__wrapper.header__top-wrapper
       .header__contacts
         .header__contacts-city
-          svg(width="40px" height="40px")
+          svg(width="25px" height="25px")
             use(xlink:href="#icon-map")
           .header__contacts-city-container  
             span Ваш город:
             a(href="#") Санкт- Петербург
 
         .header__contacts-phone
-          svg(width="35px" height="35px")
+          svg(width="25px" height="25px")
             use(xlink:href="#icon-phone")
           a(href="tel:+79999999999") +7 999 999 99 99 
       .header__info
-        svg(width="40px" height="40px")
-          use(xlink:href="#icon-info")
-        .header__info-container
-          a(href="#") Условия оплаты и возврата
-          a(href="#") Политика конфиденциальности
+        ul.header__nav
+          each item in headerNavList
+            li.header__nav-item
+              a(href=item.url)= item.title
+      
+        ul.header__action
+          each button in actionList
+            li.header__action-item
+              a(href=button.url)
+                svg(width=button.iconWidth height=button.iconHeight)
+                  use(xlink:href=button.iconName)
 
-  .header__main
+  //.header__main
     .cmn__wrapper.header__main-wrapper
       ul.header__nav
         each item in headerNavList

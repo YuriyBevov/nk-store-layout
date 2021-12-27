@@ -112,3 +112,8 @@ svg {
     transition-duration: 0ms;
   }
 }
+
+.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: initial !important;
+}

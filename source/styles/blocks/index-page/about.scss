@@ -3,7 +3,7 @@
 
     position: relative;
 
-    &::before,
+    /* &::before,
     &::after {
         position: absolute;
         content: '';
@@ -27,14 +27,14 @@
         width: 20rem;
         height: 20rem;
         background-image: url("../assets/img/bg-dec4.svg");
-    }
+    } */
     
     &__container {
         display: flex;
 
         position: relative;
 
-            &::before,
+            /*&::before,
             &::after {
                 position: absolute;
                 content: '';
@@ -59,7 +59,7 @@
                 height: 7rem;
                 
                 background-image: url("../assets/img/bg-dec6.svg");
-            }
+            }*/
 
         img {
             width: 50%;
@@ -126,7 +126,7 @@
     &__button {
         position: relative;
 
-        &::before,
+        /*&::before,
         &::after {
             position: absolute;
             content: '';
@@ -149,6 +149,6 @@
             width: 90rem;
             height: 90rem;
             background-image: url("../assets/img/bg-dec2.svg");
-        }
+        }*/
     }
 }

@@ -8,6 +8,11 @@
         font-size: 3.6rem;
         line-height: 4.4rem;
 
+        @media(max-width: $sm_w) {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 4rem;

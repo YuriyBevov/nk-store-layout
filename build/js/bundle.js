@@ -12456,8 +12456,27 @@ let reviewSwiper = document.querySelector('.reviews-swiper');
 reviewSwiper ?
 new swiper_core__WEBPACK_IMPORTED_MODULE_0__.default(reviewSwiper, {
     modules: [swiper_core__WEBPACK_IMPORTED_MODULE_0__.Navigation],
-    slidesPerView: '4',
-    // spaceBetween: 20,
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+
+    breakpoints: {
+        /*1920: {
+            slidesPerView: 4,
+        },
+
+        1440: {
+            slidesPerView: 4,
+        },*/
+
+        768: {
+            spaceBetween: 30,
+        },
+
+        534: {
+            spaceBetween: 20
+        }
+      },
     
     navigation: {
         nextEl: ".swiper-button-next",

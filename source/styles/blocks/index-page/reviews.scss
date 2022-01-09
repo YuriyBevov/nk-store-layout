@@ -3,8 +3,13 @@
 
     &-swiper {
         position: relative;
-        padding-bottom: 7rem;
-        overflow: visible !important;
+        padding-bottom: 10rem;
+        //overflow: visible !important;
+    }
+
+    .swiper-slide {
+        width: auto;
+        padding: 0 15px;
     }
 
     &-button-next,
@@ -20,7 +25,7 @@
         border-radius: 50px;
         z-index: 100;
 
-        top: 98%;
+        top: 90%;
         cursor: pointer;
 
         &::after {
